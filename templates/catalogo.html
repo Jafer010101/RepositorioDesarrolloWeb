@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <img src="https://static.vecteezy.com/system/resources/previews/002/378/022/original/woman-face-logo-free-vector.jpg" alt="">
+        <div class="navbar">
+            <a href="/">Inicio</a>
+            <a href="/catalogo">Tienda</a>
+            <a href="#">Servicio</a>
+            <a href="/contacto">Contacto</a>
+            <a href="#">Más</a>
+        </div>
+    </nav>
+    <section>
+    <section class="white">
+    </section>
+    <section class="catalogo">
+        <div class="container3">
+            <h1 class="titulo3">Tienda en línea</h1>
+            <p class="descripcion3">Conoce nuestros productos.</p>
+            <ul class="catalogo-lista">
+                {% for item in items %}
+                <li class="catalogo-item">
+                    <img src="{{ item['URLim'] }}" alt="{{ item['Nombreproducto'] }}" class="product-image">
+                    <h3>{{ item['Nombreproducto'] }}</h3>
+                    <p>Precio: {{ item['Precio'] }}</p>
+                    <p>{{ item['Descripcion'] }}</p>
+                    <a href="{{ url_for('detalle_item', item_id=item['id']) }}">Ver detalles</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

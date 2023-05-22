@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <img src="https://static.vecteezy.com/system/resources/previews/002/378/022/original/woman-face-logo-free-vector.jpg" alt="">
+        <div class="navbar">
+            <a href="/">Inicio</a>
+            <a href="/catalogo">Tienda</a>
+            <a href="#">Servicio</a>
+            <a href="/contacto">Contacto</a>
+            <a href="#">Más</a>
+        </div>
+    </nav>
+    <section>
+        <section class="white">
+        </section>
+        <section class="contacto">
+            <div class="containercontact">
+                <h1>Contacto</h1>
+                <p>¡Nos encantaría saber de ti! Puedes ponerte en contacto con nosotros utilizando el formulario a continuación.</p>
+                <form method="POST" action="/contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

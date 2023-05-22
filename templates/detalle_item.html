@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Item</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <img src="https://static.vecteezy.com/system/resources/previews/002/378/022/original/woman-face-logo-free-vector.jpg" alt="">
+        <div class="navbar">
+            <a href="/">Inicio</a>
+            <a href="/catalogo">Tienda</a>
+            <a href="#">Servicio</a>
+            <a href="/contacto">Contacto</a>
+            <a href="#">Más</a>
+        </div>
+    </nav>
+    <section>
+        <section class="white"></section>
+        <!-- ... -->
+        <section class="detalle">
+            <div class="container4">
+                <div class="product-details">
+                    <div class="image-container">
+                        <img src="{{ item['URLim'] }}" alt="{{ item['Nombreproducto'] }}" class="product-image">
+                    </div>
+                    <div class="product-info">
+                        <h1 class="">{{ item['Nombreproducto'] }}</h1>
+                        <p class="product-price">Precio: {{ item['Precio'] }}</p>
+                        <p class="product-description">{{ item['Descripcion'] }}</p>
+                        <form action="/recibo/{{ item['id'] }}" method="post">
+                            <input type="hidden" name="nombre" value="{{ item['Nombreproducto'] }}">
+                            <input type="hidden" name="precio" value="{{ item['Precio'] }}">
+                            <input type="hidden" name="descripcion" value="{{ item['Descripcion'] }}">
+                            <input type="hidden" name="imagen_url" value="{{ item['URLim'] }}">
+                            <button type="submit" class="buy-button">Comprar ahora</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ... -->
+    </section>
+</body>
+</html>

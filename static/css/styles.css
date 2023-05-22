@@ -1,0 +1,341 @@
+/* styles.css */
+
+body {
+    background-color: #fff;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+  }
+  
+  .navbar a {
+    align-items: center;
+    align-content: center;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .home {
+    background-image: url("/static/imagenes/background.jpg");
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  
+  .white {
+    height: 85px;
+  }
+  
+  .container {
+    text-size-adjust: 50;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    margin-left: 100px;
+  }
+  
+  .container h1 {
+    align-content: left;
+    -webkit-text-fill-color: #fff;
+    text-align: left;
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  .container p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .container button {
+    align-items: left;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+  
+  .container button:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .home2 {
+    background-image: url("/static/imagenes/background2.jpg");
+    background-size: cover;
+    height: 800px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container2 {
+    text-size-adjust: 70;
+    text-align-last: right;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: 0px;
+  }
+  
+  .container2 h1 {
+    align-content: right;
+    -webkit-text-fill-color: #fff;
+    text-align: right;
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+  
+  .container2 p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  
+  .container2 button {
+    align-items: right;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+  
+  .container2 button:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  .salto{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .catalogo {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .container3 {
+    text-size-adjust: 50;
+    margin: 0 auto;
+    max-width: 1500px; /* Ajusta el ancho máximo del contenedor */
+    text-align: center;
+  }
+  
+  .container3 h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .container3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Envolver elementos en múltiples líneas */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+  }
+  
+  .container3 li {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Agregar una transición suave al cambiar el color de fondo */
+    flex-basis: calc(25% - 20px); /* Ancho del elemento, considerando el espacio entre ellos */
+    margin-bottom: 20px; /* Espacio entre filas */
+  }
+  
+  .container3 li:hover {
+    background-color: #333; /* Cambiar el fondo en hover */
+    color: #fff;
+  }
+  
+  .container3 .product-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  .containercontact {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 50px;
+  }
+  
+  .containercontact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .containercontact p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .containercontact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .containercontact .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .containercontact label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .containercontact input,
+  .containercontact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .containercontact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .containercontact button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .contacto {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .product-image img {
+    width: 800px;
+    height: auto;
+    align-items: center;
+    align-content: center;
+  }
+  /* Resto de estilos */
+  .container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    background-color: #f2f2f2;
+    }
+    
+    .product-image img {
+    width: 800px;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    }
+    
+    .product-details {
+    display: flex;
+    align-items: center;
+    }
+    
+    .product-details .image-container {
+    width: 40%;
+    }
+    
+    .product-details .product-info {
+    flex: 1;
+    padding-left: 40px;
+    }
+    
+    .product-details .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s;
+    }
+    
+    .product-details .product-image:hover {
+    transform: scale(1.1);
+    }
+    
+    .product-details h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    }
+    
+    .product-details .price {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .product-details .description {
+    font-size: 20px;
+    margin-top: 20px;
+    }
+    
+    .product-details p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .product-details .buy-button {
+    font-size: 18px;
+    padding: 15px 20px;
+    }
+    
+    .product-details .buy-button:hover {
+    background-color: white;
+    color: black;
+    }
+  
+    .titulo-producto{
+      font-size: 45px;
+    }
